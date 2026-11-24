@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://di4vxvwbp73fh"]
+
+[ext_resource type="Texture2D" uid="uid://bdlp78hkocajl" path="res://icon.svg" id="1_ebmjs"]
+[ext_resource type="Script" uid="uid://l587mcohx85e" path="res://Scripts/player_1.gd" id="1_qxrlw"]
+[ext_resource type="Script" uid="uid://bhcw1l6efg0xi" path="res://Scripts/player_2.gd" id="3_wrm1d"]
+
+[node name="Game" type="Node2D" unique_id=116915177]
+
+[node name="player1" type="CharacterBody2D" parent="." unique_id=17849472]
+script = ExtResource("1_qxrlw")
+
+[node name="Sprite2D" type="Sprite2D" parent="player1" unique_id=687960313]
+position = Vector2(397, 243)
+scale = Vector2(0.4765625, 0.453125)
+texture = ExtResource("1_ebmjs")
+
+[node name="player2" type="CharacterBody2D" parent="." unique_id=1978138009]
+script = ExtResource("3_wrm1d")
+
+[node name="Sprite2D" type="Sprite2D" parent="player2" unique_id=1750630271]
+position = Vector2(720, 225)
+scale = Vector2(0.4765625, 0.453125)
+texture = ExtResource("1_ebmjs")
