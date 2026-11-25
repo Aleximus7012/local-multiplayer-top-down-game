@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://j1dnl4a1g2lu"]
+
+[ext_resource type="Script" uid="uid://dor5sfx6cujct" path="res://Scripts/menu.gd" id="1_1rerr"]
+
+[node name="Node2D" type="Node2D" unique_id=1952263418]
+script = ExtResource("1_1rerr")
+
+[node name="ButtonManager" type="Control" parent="." unique_id=781500654]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 12.0
+offset_top = -68.0
+offset_right = 52.0
+offset_bottom = -28.0
+
+[node name="Singleplayer" type="Button" parent="ButtonManager" unique_id=1451405522]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 314.0
+offset_right = 671.0
+offset_bottom = 365.0
+text = "Singleplayer"
+
+[node name="Multiplayer" type="Button" parent="ButtonManager" unique_id=127963381]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 375.0
+offset_right = 669.0
+offset_bottom = 428.0
+text = "Multiplayer"
+
+[connection signal="pressed" from="ButtonManager/Singleplayer" to="." method="_on_singleplayer_pressed"]
+[connection signal="pressed" from="ButtonManager/Multiplayer" to="." method="_on_multiplayer_pressed"]
